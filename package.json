@@ -6,6 +6,7 @@
   "type": "commonjs",
   "scripts": {
     "build": "tsc",
+    "prepare": "npm run build",
     "pretest": "yarn lint && yarn build",
     "test": "mocha test/**/*-test.js --trace-deprecation --timeout=60000",
     "doc": "typedoc --sort alphabetical --out docs/ --emit both --includeVersion src/api.ts",
